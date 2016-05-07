@@ -14,14 +14,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    let baseURL = "http://localhost:6069/img"
+    let baseURL = "http://localhost:6069/img/"
     let missingPeople = [
         "person1.jpg",
         "person2.jpg",
         "person3.jpg",
         "person4.jpg",
         "person5.jpg",
-        "person6.png",
+        "person6.png"
     ]
     
     override func viewDidLoad() {
@@ -44,6 +44,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PersonCell", forIndexPath: indexPath) as! PersonCell
+        
+        let url = "\(baseURL)\(missingPeople[indexPath.row])"
+        cell.configureCell(url)
         return cell
     }
 

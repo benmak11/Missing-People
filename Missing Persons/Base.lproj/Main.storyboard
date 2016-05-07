@@ -44,7 +44,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="yko-Y0-zYC"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GhZ-aO-JPN">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GhZ-aO-JPN">
                                     <size key="itemSize" width="200" height="130"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -52,7 +52,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="n1d-Ky-Ut0" customClass="PersonCell" customModule="Missing_Persons" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="0.0" width="200" height="130"/>
+                                        <rect key="frame" x="0.0" y="7" width="200" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
@@ -70,6 +70,9 @@
                                             <constraint firstItem="Vq0-am-96H" firstAttribute="top" secondItem="n1d-Ky-Ut0" secondAttribute="topMargin" id="UH6-pP-YkC"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="Vq0-am-96H" secondAttribute="trailing" id="yLV-rg-FgK"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="personImage" destination="Vq0-am-96H" id="Im8-pH-q5u"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
