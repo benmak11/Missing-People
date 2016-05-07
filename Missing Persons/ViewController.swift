@@ -17,7 +17,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let imagePicker = UIImagePickerController()
-
+    
+    var selectedPerson: Person?
     
     let missingPeople = [
         Person(personImageUrl: "person1.jpg"),
@@ -46,6 +47,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return missingPeople.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        self.selectedPerson = missingPeople[indexPath.row]
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! PersonCell
+        
+        cell.configureCell(selectedPerson!)
+        cell.setSelected()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
