@@ -73,7 +73,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1FA-yh-bLi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="1FA-yh-bLi">
                                 <rect key="frame" x="91" y="236" width="138" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="Zkw-av-6KJ"/>
@@ -90,6 +90,9 @@
                                 <state key="normal" title="CHECK FOR MATCH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkForMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4w-2r-lZ8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -107,10 +110,17 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="nHC-jx-aSa" id="faL-8p-wnr"/>
+                        <outlet property="selectedImg" destination="1FA-yh-bLi" id="EbD-5K-CGu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="353"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Profile" width="678" height="662"/>
+    </resources>
 </document>
