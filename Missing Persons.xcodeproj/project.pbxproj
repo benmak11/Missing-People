@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C253695725BA909AD64E305 /* Pods_Missing_Persons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABC302C88B359C87E13DF99 /* Pods_Missing_Persons.framework */; };
+		A74664BB1CDE9CD000E3B4A2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74664BA1CDE9CD000E3B4A2 /* Person.swift */; };
+		A74664BD1CDE9DBE00E3B4A2 /* FaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74664BC1CDE9DBE00E3B4A2 /* FaceService.swift */; };
 		A767D8FC1CDE868600AFBB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D8FB1CDE868600AFBB0E /* AppDelegate.swift */; };
 		A767D8FE1CDE868600AFBB0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A767D8FD1CDE868600AFBB0E /* ViewController.swift */; };
 		A767D9011CDE868600AFBB0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A767D8FF1CDE868600AFBB0E /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		4384C12F8B2EEEA31ABE74F0 /* Pods-Missing Persons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missing Persons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Missing Persons/Pods-Missing Persons.debug.xcconfig"; sourceTree = "<group>"; };
 		9BEF2BF7F9A2312BBC11322F /* Pods-Missing Persons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missing Persons.release.xcconfig"; path = "Pods/Target Support Files/Pods-Missing Persons/Pods-Missing Persons.release.xcconfig"; sourceTree = "<group>"; };
 		A74664B71CDE9BB000E3B4A2 /* Missing Persons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Missing Persons-Bridging-Header.h"; sourceTree = "<group>"; };
+		A74664BA1CDE9CD000E3B4A2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A74664BC1CDE9DBE00E3B4A2 /* FaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceService.swift; sourceTree = "<group>"; };
 		A767D8F81CDE868600AFBB0E /* Missing Persons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Missing Persons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A767D8FB1CDE868600AFBB0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A767D8FD1CDE868600AFBB0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				A767D9041CDE868600AFBB0E /* LaunchScreen.storyboard */,
 				A767D9071CDE868600AFBB0E /* Info.plist */,
 				A74664B71CDE9BB000E3B4A2 /* Missing Persons-Bridging-Header.h */,
+				A74664BA1CDE9CD000E3B4A2 /* Person.swift */,
+				A74664BC1CDE9DBE00E3B4A2 /* FaceService.swift */,
 			);
 			path = "Missing Persons";
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74664BD1CDE9DBE00E3B4A2 /* FaceService.swift in Sources */,
 				A767D90E1CDE912600AFBB0E /* PersonCell.swift in Sources */,
 				A767D8FE1CDE868600AFBB0E /* ViewController.swift in Sources */,
+				A74664BB1CDE9CD000E3B4A2 /* Person.swift in Sources */,
 				A767D8FC1CDE868600AFBB0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
