@@ -112,7 +112,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.5" green="0.79891690102349" blue="0.88813145639261759" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eeO-Og-sag" secondAttribute="trailing" id="G2q-BW-gJJ"/>
                             <constraint firstItem="1FA-yh-bLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJl-Lc-ac9"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="353"/>
+            <point key="canvasLocation" x="211" y="353"/>
         </scene>
     </scenes>
     <resources>
