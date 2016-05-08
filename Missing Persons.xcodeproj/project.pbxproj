@@ -55,6 +55,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A74664BE1CDFC4A200E3B4A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A767D8FD1CDE868600AFBB0E /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A74664BF1CDFC4A700E3B4A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A767D90D1CDE912600AFBB0E /* PersonCell.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A74664C01CDFC4AF00E3B4A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A74664BA1CDE9CD000E3B4A2 /* Person.swift */,
+				A74664BC1CDE9DBE00E3B4A2 /* FaceService.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A74664C11CDFC4C400E3B4A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A74664B71CDE9BB000E3B4A2 /* Missing Persons-Bridging-Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A767D8EF1CDE868600AFBB0E = {
 			isa = PBXGroup;
 			children = (
@@ -76,16 +109,15 @@
 		A767D8FA1CDE868600AFBB0E /* Missing Persons */ = {
 			isa = PBXGroup;
 			children = (
+				A74664C01CDFC4AF00E3B4A2 /* Model */,
+				A74664BF1CDFC4A700E3B4A2 /* Controller */,
+				A74664BE1CDFC4A200E3B4A2 /* View */,
+				A74664C11CDFC4C400E3B4A2 /* Resources */,
 				A767D8FB1CDE868600AFBB0E /* AppDelegate.swift */,
-				A767D90D1CDE912600AFBB0E /* PersonCell.swift */,
-				A767D8FD1CDE868600AFBB0E /* ViewController.swift */,
 				A767D8FF1CDE868600AFBB0E /* Main.storyboard */,
 				A767D9021CDE868600AFBB0E /* Assets.xcassets */,
 				A767D9041CDE868600AFBB0E /* LaunchScreen.storyboard */,
 				A767D9071CDE868600AFBB0E /* Info.plist */,
-				A74664B71CDE9BB000E3B4A2 /* Missing Persons-Bridging-Header.h */,
-				A74664BA1CDE9CD000E3B4A2 /* Person.swift */,
-				A74664BC1CDE9DBE00E3B4A2 /* FaceService.swift */,
 			);
 			path = "Missing Persons";
 			sourceTree = "<group>";

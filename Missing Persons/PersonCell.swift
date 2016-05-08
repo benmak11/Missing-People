@@ -48,6 +48,13 @@ class PersonCell: UICollectionViewCell {
         
         self.person.downloadFaceId()
     }
+    
+    func deSelect() {
+        self.layer.borderWidth = 0
+        self.layer.borderColor = nil
+        
+        self.person.downloadFaceId()
+    }
         
     
 }

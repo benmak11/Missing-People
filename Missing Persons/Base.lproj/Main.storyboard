@@ -108,7 +108,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="checkForMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4w-2r-lZ8"/>
+                                    <action selector="checkMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeW-PO-X31"/>
                                 </connections>
                             </button>
                         </subviews>

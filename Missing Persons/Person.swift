@@ -27,7 +27,7 @@ class Person {
                     var faceId: String?
                     for face in faces{
                         faceId = face.faceId
-                        print("Face Id: \(faceId)")
+                        //print("Face Id: \(faceId)")
                         break
                     }
                     
