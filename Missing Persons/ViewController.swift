@@ -69,7 +69,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PersonCell", forIndexPath: indexPath) as! PersonCell
         
         let person = missingPeople[indexPath.row]
-        let url = "\(baseURL)\(missingPeople[indexPath.row])"
+        _ = "\(baseURL)\(missingPeople[indexPath.row])"
         cell.configureCell(person)
         return cell
     }
@@ -134,12 +134,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                                 if err == nil {
                                     if result.isIdentical == true{
                                         self.success()
+                                        /*print(result.confidence)
+                                         print(result.isIdentical)
+                                         print(result.debugDescription)*/
                                     } else {
                                         self.fail()
                                     }
-                                    /*print(result.confidence)
-                                    print(result.isIdentical)
-                                    print(result.debugDescription)*/
                                 } else {
                                     // print(result.debugDescription)
                                 }
